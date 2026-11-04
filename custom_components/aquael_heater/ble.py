@@ -372,4 +372,3 @@ class AquaelBluetoothClient:
             self._uuids["transition_minutes"],
             minutes_to_device(minutes),
         )
-```
