@@ -31,7 +31,11 @@ class AquaelDataUpdateCoordinator(DataUpdateCoordinator[dict[str, Any]]):
 
     def __init__(self, hass: HomeAssistant, entry: ConfigEntry) -> None:
         self.entry = entry
-        self.client = AquaelBluetoothClient(hass, entry.data[CONF_ADDRESS])
+        self.client = AquaelBluetoothClient(
+            hass,
+            entry.data[CONF_ADDRESS],
+            entry.data.get(CONF_MODEL, MODEL_FLOW),
+        )
         self._last_successful_update: float | None = None
         self._failed_update_cycles = 0
         self._next_ble_retry_at = 0.0
