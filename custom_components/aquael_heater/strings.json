@@ -3,7 +3,7 @@
     "step": {
       "user": {
         "title": "Aquael Heater",
-        "description": "Select a discovered Aquael heater or enter the BLE address manually.",
+        "description": "Select a discovered Aquael Heater BT or enter the BLE address manually.",
         "data": {
           "device": "Device"
         }
