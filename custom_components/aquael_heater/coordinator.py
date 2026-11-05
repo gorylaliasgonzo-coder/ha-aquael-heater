@@ -281,4 +281,3 @@ class AquaelDataUpdateCoordinator(DataUpdateCoordinator[dict[str, Any]]):
             DOMAIN,
             f"{self.entry.entry_id}_{BLE_UNAVAILABLE_ISSUE_ID}",
         )
-```
